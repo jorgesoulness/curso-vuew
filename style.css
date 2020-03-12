@@ -1,0 +1,43 @@
+*,
+    body {
+      padding: 0; margin: 0; background-color: #ffffff;
+      color: #1f1f1f; line-height: 1.2; font-family: 'Baloo Chettan 2', cursive; font-weight: 400; font-size: 16px;
+    }
+    h1, h2, h3, h4, h5, h6 { font-weight: 600; color: #000000; line-height: 1.8; margin-top: 0; margin-bottom: 16px; font-size: 20px; }
+    p {
+      line-height: 1.6; margin-top: 0; margin-bottom: 10px;
+    }
+    a {
+      color: black; letter-spacing: 2px;
+    }
+    code {
+      font-style: italic; background-color: #eaeaea; color: #000000; padding: 0 5px; font-size: 13px; font-weight: 600;
+    }
+    img {
+      max-width: 100%;
+    }
+    a:hover {
+      color: rgb(20, 224, 139);
+    }
+    .wrapperGen {
+      width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px; display: block; padding-top: 100px;
+    }
+    .listadoGen {
+      width: 100%; max-width: 900px; margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px; display: block; padding-top: 100px;
+    }
+    ul, ol { list-style-type: none; padding: 0 0 0 15px; margin: 0 0 10px 0; }
+    .listPage {
+      display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap;
+    }
+    .listPage li {
+      margin: 0 0 8px 0; padding: 5px; background-color: #eaeaea; list-style-type: none; display: block; margin-right: 1px; position: relative;
+    }
+    .listPage li:last-child {
+      margin-right: 0;
+    }
+    .listPage li a {
+      color: black; font-size: 13px; display: block; width: auto; height: auto; margin: 0; padding: 0; background-color: transparent; border: none; outline: 0; text-decoration: none; text-transform: uppercase; letter-spacing: 2.5px;
+    }
+    .listPage li a:hover {
+      color: rgb(20, 224, 139);
+    }

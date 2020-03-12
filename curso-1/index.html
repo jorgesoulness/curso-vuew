@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primer curso | vue.js</title>
+  <script src="../vue.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div id="appVue">
+    <div class="wrapperGen">
+      <!-- Interpolación {{ el_valor }} / Enlace de datos -->
+      <span>{{ mostrarMensaje() }}</span>
+      <!-- (Directiva v-bind) Enlaces con elementos HTML, no son lo mismo que una interpolación -->
+      <!-- No se puede agregar una interpolación dentro de los atributos HTML como src="{{ src }}" -->
+      <img :src="src" alt="">
+      <!-- una forma mas rápida de mostrar propiedas del data en este caso en el source de imagen solo es: :src="src" -->
+    </div>
+  </div><!-- end.Inicia #appVue (vue.js) -->
+
+  <div class="listadoGen">
+    <ul class="listPage">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="ciclosvue.html">Ciclos</a></li>
+      <li><a href="ciclosvue.html">Gancho de ciclos</a></li>
+    </ul>
+  </div>
+
+  <script src="scriptVue.js"></script>
+</body>
+</html>
