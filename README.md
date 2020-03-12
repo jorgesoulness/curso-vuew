@@ -1,2 +1,2 @@
 # CURSO VUE JS
-Curso perosnal del framework Vue JS
+Curso personal del framework Vue JS
