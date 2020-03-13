@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +12,8 @@
   <div id="appVue">
     <div class="wrapperGen">
       <div class="notas">
-        <h3>Ciclo de Vida de la instancia</h3>
-        <p>Eso sirve para entrar a la instancia en los estados en lo que se tengan que ingresar mediante métodos.<br>Cuando se inicia la aplicación con <code>new Vue</code> se ejecutan los sigueintes métodos:</p>
+        <h3>{{ tituloSection }}</h3>
+        <p>Eso sirve para entrar a la instancia en los estados en lo que se tengan que ingresar mediante métodos.<br>Cuando se inicia la aplicación con <code>new Vue</code> se ejecutan los siguientes métodos:</p>
         <ul>
           <li>Metodo: <code>beforeCreate()</code> Este es el prime método que se inicia automaticamente justo antes de crear la instancia</li>
           <li>Metodo: <code>created()</code> Despues de que se crea la instancia, se ejecuta created.</li>
@@ -25,12 +25,6 @@
           <li>Metodo: <code>destroyed()</code> Se ejecuta cuando la instancia se destruye</li>
         </ul>
       </div>
-      <!-- Interpolación {{ el_valor }} / Enlace de datos -->
-      <span>{{ mostrarMensaje() }}</span>
-      <!-- (Directiva v-bind) Enlaces con elementos HTML, no son lo mismo que una interpolación -->
-      <!-- No se puede agregar una interpolación dentro de los atributos HTML como src="{{ src }}" -->
-      <img v-bind:src="src" alt="">
-      <!-- una forma mas rápida de mostrar propiedas del data en este caso en el source de imagen solo es: :src="src" -->
     </div>
   </div><!-- end.Inicia #appVue (vue.js) -->
 
@@ -42,6 +36,6 @@
     </ul>
   </div>
 
-  <script src="scriptVue.js"></script>
+  <script src="scriptCiclos.js"></script>
 </body>
 </html>

@@ -4,32 +4,19 @@ const app = new Vue({
   el: '#appVue',
   // Objeto data
   data: {
+    // Se agrega títulode la sección
+    tituloSection: 'Introducción a Vue js',
     // Se agrega propiedad mensaje
     mensaje: 'Hola mundo!',
+    // Propiedad de imagen
+    src: 'https://vuejs.org/images/logo.png'
   },
-  // los metodos de los ciclos van fuera methods
-  beforeCreate: function() {
-
-  },
-  created: function() {
-
-  },
-  beforeMount: function() {
-
-  },
-  mounted: function() {
-
-  },
-  beforeUpdate: function() {
-
-  },
-  updated: function() {
-
-  },
-  beforeDestroy :function() {
-
-  },
-  destroyed: function() {
-    
+  methods: {
+    // Se inician los metodos para recibir datos
+    // Si se quiere mostrar datos de una propiedad mediante un
+    // Método, se debe agregar this.nombre_propiedad
+    mostrarMensaje: function() {
+      return this.mensaje;
+    }
   }
 })
