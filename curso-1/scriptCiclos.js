@@ -6,7 +6,7 @@ new Vue({
   data: {
     // Se agrega propiedad mensaje
     tituloSection: 'Ciclo de Vida de la instancia',
-    mensaje: 'Hola mudno'
+    mensaje: 'Hola mundo'
   },
   // los metodos de los ciclos van fuera methods
   beforeCreate: function() {
@@ -25,8 +25,6 @@ new Vue({
     console.log('Se ejecuta - beforeUpdate');
   },
   updated: function() {
-    let idCont = document.getElementByID('mensajeMetodo');
-    idCont.appendHTML('listo, se actualizo');
     console.log('Se ejecuta - updated');
   },
   beforeDestroy :function() {
@@ -42,7 +40,7 @@ new Vue({
       this.$destroy();
     },
     texto: function() {
-      
+
     }
   }
 })
