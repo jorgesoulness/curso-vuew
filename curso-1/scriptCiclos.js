@@ -1,11 +1,12 @@
 // Se define una variable para crear una nueva instancia e iniciar Vue JS
 // objeto new Vue
-const app = new Vue({
+new Vue({
   el: '#appVue',
   // Objeto data
   data: {
     // Se agrega propiedad mensaje
     tituloSection: 'Ciclo de Vida de la instancia',
+    mensaje: 'Hola mudno'
   },
   // los metodos de los ciclos van fuera methods
   beforeCreate: function() {
@@ -24,6 +25,8 @@ const app = new Vue({
     console.log('Se ejecuta - beforeUpdate');
   },
   updated: function() {
+    let idCont = document.getElementByID('mensajeMetodo');
+    idCont.appendHTML('listo, se actualizo');
     console.log('Se ejecuta - updated');
   },
   beforeDestroy :function() {
@@ -31,5 +34,15 @@ const app = new Vue({
   },
   destroyed: function() {
     console.log('Se ejecuta - destroyed');
+  },
+  // Se crean un nuevo metodo para el DOM (Para destruir la instancia) destruir().
+  methods: {
+    destruir: function() {
+      // El sign ($) es para decirle a Vue que no es un metodo creado por nosotros.
+      this.$destroy();
+    },
+    texto: function() {
+      
+    }
   }
 })

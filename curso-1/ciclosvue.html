@@ -24,6 +24,13 @@
           <li>Metodo: <code>beforeDestroy()</code> Se ejecuta antes de destruir la instancia</li>
           <li>Metodo: <code>destroyed()</code> Se ejecuta cuando la instancia se destruye</li>
         </ul>
+        <!-- se crean 2 botones uno para cambiar el mensjae -->
+        <p>{{ mensaje }}</p>
+        <!-- se crea un botón con un enlace -->
+        <!-- mediante un evento v-on:click="" -->
+        <button v-on:click="mensaje = 'Hola mundo desde el botón!'">Cambiar mensaje</button>
+        <button v-on:click="destruir">Destruir instancia</button>
+        <div id="mensajeMetodo" v-model=""></div>
       </div>
     </div>
   </div><!-- end.Inicia #appVue (vue.js) -->

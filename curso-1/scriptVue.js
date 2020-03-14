@@ -1,6 +1,6 @@
 // Se define una variable para crear una nueva instanccia e iniciar Vue JS
 // objeto new Vue
-const app = new Vue({
+new Vue({
   el: '#appVue',
   // Objeto data
   data: {
